@@ -59,6 +59,10 @@ Code: mrRoboger(0);
 Expected Output: 0
 
 Test: "It should return an array with 0, 1, 2, 'Won't you be my neighbor?' when 3 is inputted"
-Code: mrRoboger(3):
+Code: mrRoboger(3);
 Expected Output: 0, 1, 2, "Wont you be my neighbor?"
+
+Test: "It should return an array with 0, 1, 'Boop!', 'Won't you be my neighbor?' when 3 is inputted"
+Code: mrRoboger(3);
+Expected Output: 0, 1, "Boop!", "Won't you be my neighbor?"
 ```
