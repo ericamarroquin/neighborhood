@@ -13,23 +13,42 @@
 <body>
   <div class="container">
     <div class="jumbotron">
-    <h1>Welcome to Mr. Roboger's neighborhood!</h1>
-  </div>
-    <p>We're happy to see you here. Enter a number and your name to receive a special message from Mr. Roboger himself!</p>
-    <form id="roboger">
-      <div class="form-group">
-        <label for="numberInput">Enter a number:</label>
-        <input id="numberInput" class="form-control" type="number" min="0" required>
+      <h1>Welcome to Mr. Roboger's neighborhood!</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-9">
+        <h3>Come along!</h3>
+        <p>We're happy to see you here. Enter a number and your name to receive a special message from Mr. Roboger himself!</p>
+        <form id="roboger">
+          <div class="form-group">
+            <label for="numberInput">Enter a number:</label>
+            <input id="numberInput" class="form-control" type="number" min="0" required>
+          </div>
+          <div class="form-group">
+            <label for="nameInput">Your name, please:</label>
+            <input id="nameInput" class="form-control" type="text" required>
+          </div>
+          <button type="submit" class="btn btn-danger">What does Mr. Roboger have to say?</button>
+        </form>
+        <div id="output"></div>
+        <button id="backwards" type="submit" class="btn btn-outline-danger">Wait, give me that backwards?</button>
+        <div id="backwardsOutput"></div>
       </div>
-      <div class="form-group">
-        <label for="nameInput">Your name, please:</label>
-        <input id="nameInput" class="form-control" type="text" required>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">What's happening in the neighborhood?</h5>
+            <p class="card-text">Joe Negri’s Music Shop is bustling, with new shows each week and daily tours around the studio. Come down and learn a new instrument!
+            <br>
+            <br>
+            Betty’s Little Theater has all the new movies out! Want to see the newest Superhero movie? The newest comedy or thriller? Reserve your tickets online and come on down!
+            <br>
+            <br>
+            Ready to pick up a new hobby? Elsie Neal’s Craft Shop has everything you could need - and more! There are classes for fiber arts, painting, and even ceramics. You never know what you might find!</p>
+          </div>
+        </div>
       </div>
-      <button type="submit" class="btn btn-danger">What does Mr. Roboger have to say?</button>
-    </form>
-    <div id="output"></div>
-    <button id="backwards" type="submit" class="btn btn-outline-danger">Wait, give me that backwards?</button>
-    <div id="backwardsOutput"></div>
+    </div>
   </div>
 </body>
 </html>
