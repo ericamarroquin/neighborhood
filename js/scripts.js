@@ -1,3 +1,5 @@
+//Business Logic
+
 function mrRoboger(number) {
   let roboArray = [];
   for (let i = 0; i < number + 1; i++) {
@@ -13,3 +15,6 @@ function mrRoboger(number) {
   }
   return roboArray;
 }
+
+//UI Logic
+
