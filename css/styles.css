@@ -1,11 +1,18 @@
+.jumbotron {
+  background-image: url("../img/neighborhood-set.jpeg");
+  background-size: cover;
+}
+
 button {
   margin-bottom: 25px;
   margin-top: 25px;
 }
 
 h1 {
+  font-weight: bold;
   font-family: 'Goudy Bookletter 1911', serif;
-  color: rgb(179, 1, 1);
+  color: white;
+  text-shadow: 2px 2px black;
 }
 
 body {
@@ -14,4 +21,12 @@ body {
 
 #backwards {
   display: none;
+}
+
+#output {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#backwardsOutput {
+  font-family: 'Courier New', Courier, monospace;
 }

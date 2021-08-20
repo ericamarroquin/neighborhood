@@ -16,10 +16,6 @@ function mrRoboger(number) {
   return roboArray;
 }
 
-function reverse(string) {
-  const array = string.split(" ")
-}
-
 //UI Logic
 
 function addNeighborName(array, name) {
