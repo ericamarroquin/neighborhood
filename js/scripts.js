@@ -13,10 +13,19 @@ function mrRoboger(number) {
       roboArray.push(i);
     }
   }
-  return roboArray.join(" ");
+  return roboArray;
 }
 
 //UI Logic
+
+function addNeighborName(array, name) {
+  array.forEach(function(element) {
+    if (element === "Won't you be my neighbor?") {
+      let element = "Won't you be my neighbor," + name + "?";
+    }
+  })
+  return array;
+}
 
 $(document).ready(function() {
   $("form#roboger").submit(function(event) {
