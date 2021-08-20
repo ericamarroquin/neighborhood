@@ -3,6 +3,9 @@
 <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+    </style>
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
   <title>Mr. Roboger's Neighborhood</title>
@@ -15,7 +18,7 @@
     <form id="roboger">
       <div class="form-group">
         <label for="numberInput">Enter a number:</label>
-        <input id="numberInput" class="form-control" type="text" required>
+        <input id="numberInput" class="form-control" type="number" min="0" required>
       </div>
       <button type="submit" class="btn btn-danger">What does Mr. Roboger have to say?</button>
     </form>

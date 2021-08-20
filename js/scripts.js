@@ -13,7 +13,7 @@ function mrRoboger(number) {
       roboArray.push(i);
     }
   }
-  return roboArray;
+  return roboArray.join(" ");
 }
 
 //UI Logic
