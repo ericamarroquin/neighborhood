@@ -19,19 +19,21 @@ function mrRoboger(number) {
 //UI Logic
 
 function addNeighborName(array, name) {
-  array.forEach(function(element) {
-    if (element === "Won't you be my neighbor?") {
-      let element = "Won't you be my neighbor," + name + "?";
+  for (i = 0; i < array.length; i++) {
+    if (array[i] === "Won't you be my neighbor?") {
+      array[i] = "Won't you be my neighbor, " + name + "?";
     }
-  })
-  return array;
+  }
+  return array.join(" ");
 }
 
 $(document).ready(function() {
   $("form#roboger").submit(function(event) {
     event.preventDefault();
     const numberInput = parseInt($("#numberInput").val());
+    const nameInput = $("#nameInput").val();
     const roboOutput = mrRoboger(numberInput);
-    $("#output").text(roboOutput);
+    const neighborNameOutput = addNeighborName(roboOutput,nameInput);
+    $("#output").text(neighborNameOutput);
   })
 })
