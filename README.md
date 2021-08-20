@@ -57,4 +57,8 @@ Describe: mrRoboger()
 Test: "It should return an array with a 0 if the number 0 is inputted"
 Code: mrRoboger(0);
 Expected Output: 0
+
+Test: "It should return an array with 0, 1, 2, 'Won't you be my neighbor?' when 3 is inputted"
+Code: mrRoboger(3):
+Expected Output: 0, 1, 2, "Wont you be my neighbor?"
 ```
