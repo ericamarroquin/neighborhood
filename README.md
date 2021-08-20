@@ -48,3 +48,13 @@ Thank you to  [Epicodus](https://www.epicodus.com/) lesson "Text Editor: Visual 
 ## Contact Information
 
 Erica Marroquin | [Email](mailto:ericamarroquin03@gmail.com) | [LinkedIn](https://www.linkedin.com/in/erica-marroquin/)
+
+## Specs
+
+```javascript
+Describe: mrRoboger()
+
+Test: "It should return an array with a 0 if the number 0 is inputted"
+Code: mrRoboger(0);
+Expected Output: 0
+```
