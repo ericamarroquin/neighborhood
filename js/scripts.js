@@ -35,5 +35,10 @@ $(document).ready(function() {
     const roboOutput = mrRoboger(numberInput);
     const neighborNameOutput = addNeighborName(roboOutput,nameInput);
     $("#output").text(neighborNameOutput);
+    $("#backwards").show();
+    $("#backwards").click(function(event) {
+      event.preventDefault();
+      $("#backwardsOutput").text(neighborNameOutput);
+    })
   })
 })

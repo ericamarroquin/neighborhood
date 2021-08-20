@@ -1,5 +1,6 @@
 button {
   margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 h1 {
@@ -9,4 +10,8 @@ h1 {
 
 body {
   margin: 50px;
+}
+
+#backwards {
+  display: none;
 }
