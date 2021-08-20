@@ -16,6 +16,10 @@ function mrRoboger(number) {
   return roboArray;
 }
 
+function reverse(string) {
+  const array = string.split(" ")
+}
+
 //UI Logic
 
 function addNeighborName(array, name) {
@@ -38,7 +42,9 @@ $(document).ready(function() {
     $("#backwards").show();
     $("#backwards").click(function(event) {
       event.preventDefault();
-      $("#backwardsOutput").text(neighborNameOutput);
+      const backwardsRoboOutput = mrRoboger(numberInput).reverse();
+      const bwNeighborNameOutput = addNeighborName(backwardsRoboOutput,nameInput);
+      $("#backwardsOutput").text(bwNeighborNameOutput);
     })
   })
 })
