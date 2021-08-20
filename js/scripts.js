@@ -18,3 +18,11 @@ function mrRoboger(number) {
 
 //UI Logic
 
+$(document).ready(function() {
+  $("form#roboger").submit(function(event) {
+    event.preventDefault();
+    const numberInput = parseInt($("#numberInput").val());
+    const roboOutput = mrRoboger(numberInput);
+    $("#output").text(roboOutput);
+  })
+})
