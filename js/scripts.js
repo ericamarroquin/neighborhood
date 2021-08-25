@@ -1,10 +1,10 @@
 //Business Logic
 
-function mrRoboger(number) {
+function mrRoboger(number,name) {
   let roboArray = [];
   for (let i = 0; i < number + 1; i++) {
     if (i.toString().includes(3)) {
-      roboArray.push("Won't you be my neighbor?");
+      roboArray.push("Won't you be my neighbor, " + name + "?");
     } else if (i.toString().includes(2)) {
       roboArray.push("Boop!");
     } else if (i.toString().includes(1)) {
@@ -18,29 +18,18 @@ function mrRoboger(number) {
 
 //UI Logic
 
-function addNeighborName(array, name) {
-  for (i = 0; i < array.length; i++) {
-    if (array[i] === "Won't you be my neighbor?") {
-      array[i] = "Won't you be my neighbor, " + name + "?";
-    }
-  }
-  return array.join(" ");
-}
-
 $(document).ready(function() {
   $("form#roboger").submit(function(event) {
     event.preventDefault();
     const numberInput = parseInt($("#numberInput").val());
     const nameInput = $("#nameInput").val();
-    const roboOutput = mrRoboger(numberInput);
-    const neighborNameOutput = addNeighborName(roboOutput,nameInput);
-    $("#output").text(neighborNameOutput);
+    const roboOutput = mrRoboger(numberInput,nameInput);
+    $("#output").text(roboOutput.join(" "));
     $("#backwards").show();
     $("#backwards").click(function(event) {
       event.preventDefault();
-      const backwardsRoboOutput = mrRoboger(numberInput).reverse();
-      const bwNeighborNameOutput = addNeighborName(backwardsRoboOutput,nameInput);
-      $("#backwardsOutput").text(bwNeighborNameOutput);
+      const backwardsRoboOutput = mrRoboger(numberInput,nameInput).reverse();
+      $("#backwardsOutput").text(backwardsRoboOutput.join(" "));
     })
   })
 })
